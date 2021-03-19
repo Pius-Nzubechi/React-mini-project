@@ -7,7 +7,6 @@ class TodoList extends Component {
   }
 
   render() {
-   
     return (
       <div className="todo-item">
         <input
@@ -22,5 +21,4 @@ class TodoList extends Component {
     );
   }
 }
-
 export default TodoList;

@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import TodoData from "./TodoData";
 import TodoList from "./components/TodoList";
 import Conditional from './components/conditional'
+import Api from './components/api'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      todo: TodoData,
-    };
-  }
+  state = {
+    todo: TodoData,
+  };
 
   handleChange = (id) => {
     this.setState((prevState) => {
@@ -34,6 +32,7 @@ class App extends Component {
         
         <div className="todo-list">{Todofunc}</div>
         <Conditional />
+        <Api />
       </React.Fragment>
     );
   }
